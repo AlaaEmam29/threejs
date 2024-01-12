@@ -21,7 +21,7 @@ const corresponding = {
 
 export function Avatar(props) {
 const {playAudio , script} = useControls({
-  playAudio: false,
+  playAudio: true,
   script: "wel"
 });
 const audio = useMemo(() => new Audio("/audio/" + script + ".mp3"), [script]);
